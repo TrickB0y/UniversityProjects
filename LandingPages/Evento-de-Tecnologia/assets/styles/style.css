@@ -100,12 +100,11 @@ p {
 
 .cronogram-box {
     background-color: white;
-    margin-top: 4rem;
     margin-right: 5rem;
     margin-left: 5rem;
     margin-bottom: 1rem;
     padding-left: 2rem;
-    padding-left: 2rem;
+    padding-right: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -114,4 +113,116 @@ p {
     text-align: center;
     margin: 0;
     font-size: 30px;
+}
+
+.cronogram-timeline {
+    display: grid;
+    grid-template-columns: 1fr 40px 10px 40px 1fr;
+}
+
+.cronogram-day-box-left p {
+    text-align: left;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.cronogram-day-box-left {
+    background-color: black;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.cronogram-day-box-right p {
+    text-align: right;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.cronogram-day-box-right {
+    background-color: black;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.day-title {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 7px;
+}
+
+.day-info {
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+
+.vertical-line {
+    display: inline-block;
+    background-color: black;
+}
+
+.horizontal-line {
+    display: inline-block;
+    background-color: black;
+    height: 10px;
+    vertical-align: center;
+}
+
+.blank {
+    display: inline-block;
+    height: 40px;
+}
+
+.ticket-box p {
+    color: black;
+}
+
+.ticket-box {
+    background-color: white;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.ticket-title {
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+}
+
+.ticket-info {
+    font-size: 19px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.ticket-link {
+    background-color: limegreen;
+    padding: 16px;
+    color: white;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    text-decoration: none;
+    transition: box-shadow 0.15s,
+                background-color 0.15s;
+}
+
+.ticket-link:hover {
+    box-shadow: 5px 5px 0px black;
+}
+
+.ticket-link:active {
+    background-color: rgba(50, 205, 50, 0.425);
+    box-shadow: 0px 0px 0px black;
+}
+
+.ticket-link:visited {
+    color: white;
 }
