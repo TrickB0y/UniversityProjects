@@ -1,0 +1,117 @@
+body {
+    background-color: #014ba0;
+}
+
+p {
+    color: white;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.top-box {
+    display: inline;
+    object-fit: cover;
+    height: 20px;
+}
+
+.confernce-img {
+    width: 100%;
+    height: 100%;
+    filter: blur(0.6rem);
+}
+
+.event-title {
+    position: absolute;
+    
+    transform: translate(0%, -150%);
+}
+
+.title-text {
+    margin: 0;
+    font-size: 100px;
+    color: white;
+}
+
+.date-box {
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+.date {
+    font-size: 30px;
+}
+
+.speakers-box p{
+    color: black;
+}
+
+.speakers-box {
+    background-color: white;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.speakers-title {
+    text-align: center;
+    font-size: 70px;
+}
+
+.speaker-box {
+    display: block;
+}
+
+.speaker-pic-box {
+    display: inline-block;
+    object-fit: cover;
+    width: 20%;
+}
+
+.speaker-pic {
+    width: 100%;
+    height: 100%;
+}
+
+.speaker-info-box {
+    display: inline-block;
+    vertical-align: top;
+    background-color: rgb(196, 193, 193);
+    width: 70%;
+    padding: 10px;
+    margin-left: 40px;
+}
+
+.speaker-name {
+    font-size: 200%;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.speaker-info {
+    font-size: 100%;
+    margin-left: 16px;
+}
+
+.cronogram-box p {
+    color: black;
+}
+
+.cronogram-box {
+    background-color: white;
+    margin-top: 4rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.cronogram-title {
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+}
