@@ -1,0 +1,98 @@
+@font-face {
+    font-family: hand-maker;
+    src: url(fonts/Hand\ Marker.ttf);
+}
+
+p {
+    font-family: "Open Sans";
+}
+
+h1 {
+    font-size: 600%;
+    font-family: hand-maker;
+    border: 0;
+    margin: 0;
+    color: #50F275;
+}
+
+h2 {
+    font-size: 350%;
+    font-family: hand-maker;
+    border: 0;
+    margin: 0;
+    color: #D94856;
+}
+
+body {
+    background-color: #2B1937;
+}
+
+header {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 1%;
+    margin-bottom: 2.5%;
+}
+
+.section-title {
+    margin-left: 2.5%;
+}
+
+.delivery-menu {
+    display: flex;
+    padding: 2%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 10rem;
+    padding: 1%;
+    margin: 2%;
+    background-color: #EEE5F3;
+}
+
+.item-name {
+    font-size: 100%;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+.item-image {
+    height: 5rem;
+}
+
+.buy-link {
+    font-family: "Open Sans";
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
+    background-color: #50F275;
+    color: #EEE5F3;
+    width: 7rem;
+    height: 2rem;
+    margin-bottom: 2%;
+    transition: box-shadow 0.15s;
+}
+
+.buy-link:hover {
+    box-shadow: 5px 5px 0px #2B1937;
+}
+
+.buy-link:active {
+    box-shadow: 0px 0px 0px #50F275;
+}
+
+.buy-link:visited {
+    color: #EEE5F3;
+}
