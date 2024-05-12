@@ -1,0 +1,251 @@
+.tauri-regular {
+    font-family: "Tauri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+input {
+    cursor: text;
+}
+
+input::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, p, button, a, input{
+    font-family: "Tauri";
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 150%;
+    margin-bottom: 10px;
+}
+
+.new-todo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.new-todo p {
+    margin-right: 10px;
+}
+
+.task-add-button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: #414141;
+    color: #c2c2c2;
+    font-size: 150%;
+    transition: background-color, 0.15s,
+                color, 0.15s;
+}
+
+.task-add-button:hover {
+    background-color: #c2c2c2;
+    color: #414141;
+    cursor: pointer;
+}
+
+.task-add-button:active {
+    background-color: #c2c2c27c;
+    color: #4141417c;
+}
+
+.task-form {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #00000066;
+}
+
+.tsk-form-box {
+    background-color: #fefefe;
+    margin: 7% auto;
+    padding: 20px;
+    border-radius: 30px;
+    width: 80%;
+}
+
+#form-warning {
+    color: #c44141;
+}
+
+.tsk-form-box p{
+    margin-bottom: 10px;
+}
+
+.tsk-form-box input {
+    border-width: 2px;
+    border-radius: 6px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 3px;
+}
+
+.form-buttons button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    transition: background-color, 0.15s,
+                color, 0.15s;
+}
+
+.form-buttons button:hover {
+    cursor: pointer;
+}
+
+.form-button-confirm {
+    background-color: #42a742;
+    color: #fefefe;
+    margin-right: 10px;
+}
+
+.form-button-confirm:hover {
+    background-color: #000000;
+    color: #42a742;
+}
+
+.form-button-confirm:active {
+    background-color: #0000007c;
+    color: #42a7427c;
+}
+
+.form-button-cancel {
+    background-color: #c44141;
+    color: #fefefe;
+}
+
+.form-button-cancel:hover {
+    background-color: #000000;
+    color: #c44141;
+}
+
+.form-button-cancel:active {
+    background-color: #0000007c;
+    color: #c441417c;
+}
+
+.box-of-tasks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.show-task {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    border-radius: 20px;
+    width: 300px;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4px;
+    margin-left: 3px;
+    margin-right: 3px;
+    background-color: #fefefe; 
+    border-radius: 20px;
+}
+
+.task-desc {
+    margin-left: 20px;
+    width: 180px;
+}
+
+.task-name {
+    margin-top: 3px;
+    font-size: 80%;
+    margin-bottom: 5px;
+}
+
+.task-obs {
+    font-size: 60%;
+    font-weight: 300;
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
+
+.task-date {
+    font-size: 70%;
+    margin-bottom: 5px;
+}
+
+.task button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: 70%;
+    transition: background-color, 0.15s,
+                color, 0.15s;
+}
+
+.task button:hover {
+    cursor: pointer;
+}
+
+.task-button-confirm {
+    background-color: #42a742;
+    color: #fefefe;
+}
+
+.task-button-confirm:hover {
+    background-color: #000000;
+    color: #42a742;
+}
+
+.task-button-confirm:active {
+    background-color: #0000007c;
+    color: #42a7427c;
+}
+
+.task-button-remove {
+    background-color: #c44141;
+    color: #fefefe;
+    margin-right: 4px;
+}
+
+.task-button-remove:hover {
+    background-color: #000000;
+    color: #c44141;
+}
+
+.task-button-remove:active {
+    background-color: #0000007c;
+    color: #c441417c;
+}
+
+#done-task-shower div {
+    background-color: #b0f1b0;
+}
+
+#late-task-shower div {
+    background-color: #e5b3b3;
+}

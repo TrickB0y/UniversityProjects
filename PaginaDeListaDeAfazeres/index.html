@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To Do List</title>
+        <link rel="stylesheet" href="assets/style/reset.css">
+
+        <link rel="stylesheet" href="assets/style/style.css">
+        <script src="assets/scripts/script.js" defer></script>
+
+        <script src="https://kit.fontawesome.com/9452028af2.js" crossorigin="anonymous"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tauri&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1 id="page-title">Lista de Afazeres</h1>
+
+        <div id="new-task-form" class="task-form">
+            <div class="tsk-form-box">
+                <form>
+                    <h2>Nova tarefa</h2><br>
+                    <p id="form-warning"></p><br>
+                    <p>Nome da tarefa</p>
+                    <input type="text" id="task-name" name="task-name" required><br><br>
+                    <p>Observação</p>
+                    <input type="text" id="task-obs" name="task-obs"><br><br>
+                    <p>Data limite</p>
+                    <input type="date" id="limit-date" name="limit-date" required><br><br>                  
+                </form>
+                <div class="form-buttons">
+                    <button class="form-button-confirm" id="task-created" onclick="newTaskAdd()"><i class="fa-solid fa-check"></i></button>
+                    <button class="form-button-cancel" id="cancel-creation" onclick="newTaskClose()"><i class="fa-solid fa-x"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="new-todo">
+            <p>Nova tarefa</p>
+            <button class="task-add-button" id="new-task" onclick="newTaskCreation()"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        
+        <div id="tasks-box" class="box-of-tasks">
+            <div>
+                <h2>A fazer</h2>
+                <div id="todo-task-shower" class="show-task">
+
+                </div>
+            </div>
+
+            <div>
+                <h2>Já Feito</h2>
+                <div id="done-task-shower" class="show-task">
+
+                </div>
+            </div>
+
+            <div>
+                <h2>Atrasado</h2>
+                <div id="late-task-shower" class="show-task">
+
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
