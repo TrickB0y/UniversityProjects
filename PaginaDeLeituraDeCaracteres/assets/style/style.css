@@ -1,0 +1,59 @@
+body {
+    background-color: black;
+}
+
+.tauri-regular {
+    font-family: "Tauri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
+h1, p, input, button {
+    font-family: Tauri;
+    color: white;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 200%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.main-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    font-size: 20px;
+    background-color: gray;
+    border: none;
+    border-radius: 30px;
+    margin-top: 1%;
+    transition: background-color, 0.15s,
+                color, 0.15s;
+}
+
+button:hover {
+    background-color: white;
+    color: gray;
+}
+
+button:active {
+    background-color: #ffffff2a;
+    color: #80808075;
+}
+
+#char-text {
+    height: 50px;
+    width: 250px;
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
