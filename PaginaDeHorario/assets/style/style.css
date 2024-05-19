@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+.tauri-regular {
+    font-family: "Tauri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, p {
+    font-family: Tauri;
+    color: white;
+}
+
+h1 {
+    font-size: 200%;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.principal-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#clock {
+    font-size: 180%;
+    margin-bottom: 3%;
+}
+
+#analog-clock {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 100px;
+}
+
+.clock-parts {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    transition: transform, 0.15s;
+}
