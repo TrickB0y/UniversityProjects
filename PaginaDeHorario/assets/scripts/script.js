@@ -24,7 +24,7 @@ setInterval(function() {
     }
 
     if(date.getHours() != lastHour) {
-        hourDeg = hourDeg + 15;
+        hourDeg = hourDeg + 30;
         lastHour = date.getHours();
     }
 
