@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encanto de Menina</title>
+
+        <link rel="stylesheet" href="assets/style/reset.css">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tauri&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/9452028af2.js" crossorigin="anonymous"></script>
+        
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div>
+            <h1>Encanto de Menina</h1>
+        </div>
+
+        <div id="new-cloth-form">
+            <div class="form-box">
+                <form>
+                    <label for="name-input">Nome da roupa:</label>
+                    <input id="name-input" type="text">
+    
+                    <label for="size-select">Tamanho:</label>
+                    <select id="size-select">
+                        <option value="" selected="selected">--selecione-um-tamanho--</option>
+                        <option value="PP">PP</option>
+                        <option value="P">P</option>
+                        <option value="M">M</option>
+                        <option value="G">G</option>
+                        <option value="GG">GG</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                        <option value="10">10</option>
+                        <option value="12">12</option>
+                        <option value="14">14</option>
+                    </select>
+    
+                    <label for="desc-input">Descrição:</label>
+                    <textarea id="desc-input"></textarea>
+    
+                    <label for="value-input">Valor(R$):</label>
+                    <input id="value-input" type="number" min="0.00" max="100000.00" step="0.01">
+                </form>
+                <div class="form-send-buttons">
+                    <button id="cancel-button" onclick="closeFormulary()">Cancelar</button>
+                    <button id="add-button" onclick="sendFomulary()">Adicionar roupa</button>
+                    <p id="form-msg"></p>
+                </div>
+            </div>
+        </div>
+        <div class="new-cloth-display">
+            <p>Nossas Roupas</p>
+            <div id="cloth-display" class="cloth-display">
+
+            </div>
+        </div>
+        <div class="adm-button">
+            <button class="show-form-button" onclick="showFormulary();">Adicionar nova roupa</button>
+        </div>
+    </body>
+</html>

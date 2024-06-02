@@ -1,0 +1,231 @@
+.tauri-regular {
+    font-family: "Tauri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "baby";
+    src: url("assets/style/fonts/Baby.ttf");
+}
+  
+h1, h2, h3, h4, p, button, input, label {
+    font-family: "Tauri";
+}
+
+body {
+    background-color: #ffc0cb;
+    background-image: url("assets/imgs/Fluffy-white-cartoon-cloud-on-blue-sky-on-transparent-PNG.png");
+    background-size: 20%;
+}
+
+h1 {
+    font-family: "baby";
+    font-weight: normal;
+    font-size: 500%;
+    color: #b44557;
+    text-align: center;
+}
+
+.new-cloth-display {
+    background-color: #fae7ea;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: solid, 2px ,#b44557;
+    border-radius: 7px;
+    padding: 10px;
+    
+}
+
+.cloth-display {
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
+}
+
+.adm-button {
+    margin-top: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#new-cloth-form {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #00000066;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 3%;
+    margin: 5%;
+    border-radius: 10px;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+#name-input {
+    width: 290px;
+    margin-bottom: 20px;
+}
+
+#size-select {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+#desc-input {
+    margin-bottom: 20px;
+}
+
+#value-input {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+#form-msg {
+    color: #ff002b;
+    margin-top: 10px;
+}
+
+#cancel-button {
+    margin-right: 20px;
+    padding: 20px;
+    width: 100px;
+    background-color: #ff002b;
+    color: white;
+    border: none;
+    border-radius: 60px;
+    transition: background-color, 0.15s,
+                color, 0.15s;
+}
+
+#cancel-button:hover {
+    background-color: #ac0723;
+    cursor: pointer;
+}
+
+#cancel-button:active {
+    background-color: #ac072398;
+    color: #ffffff8a;
+}
+
+#add-button {
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #36ff47;
+    color: white;
+    border: none;
+    border-radius: 60px;
+    transition: background-color, 0.15s,
+                color, 0.15s;
+}
+
+#add-button:hover {
+    background-color: #169120;
+    cursor: pointer;
+}
+
+#add-button:active {
+    background-color: #16912067;
+    color: #ffffff8a;
+}
+
+.form-send-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.cloth-box {
+    background-color: #b44557;
+    padding: 2%;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.cloth-box p, .cloth-box button {
+    color: white;
+}
+
+.cloth-box button {
+    background-color: #ff002b;
+    border: none;
+    height: 60px;
+    width: 200px;
+    border-radius: 30px;
+    font-size: 20px;
+    transition: backgroud-color, 0.15s,
+                color, 0.15s;
+}
+
+.cloth-box button:hover {
+    cursor: pointer;
+    background-color: #750000;
+}
+
+.cloth-box button:active {
+    background-color: #75000063;
+    color: rgba(255, 255, 255, 0.432);
+}
+
+.cloth-name {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.cloth-size {
+    margin-bottom: 10px;
+}
+
+.cloth-desc {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.show-form-button {
+    background-color: #b44557;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    transition: backgroud-color, 0.15s,
+                color, 0.15s;
+}
+
+.show-form-button:hover {
+    cursor: pointer;
+    background-color: #af243c;
+}
+
+.show-form-button:active {
+    background-color: #ad6a76;
+    color: #ffffff8a;
+}
