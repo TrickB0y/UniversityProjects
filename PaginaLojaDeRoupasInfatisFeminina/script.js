@@ -20,6 +20,7 @@ function resetFormulary() {
     document.getElementById("size-select").selectedIndex = 0;
     document.getElementById("desc-input").value = "";
     document.getElementById("value-input").value = "";
+    document.getElementById('image-upload').value = "";
 }
 
 function getFormClothName() {
@@ -41,6 +42,15 @@ function getFormClothValue() {
     let value =  document.getElementById("value-input").value;
     return value;
 }
+
+function getFormImage() {
+    let file = document.getElementById('image-upload').files[0];
+    if (file) {
+        return file;
+    }
+    else return "";
+}
+
 
 function sendFomulary() {
     if(getFormClothName() == "") {
@@ -69,6 +79,8 @@ function useId() {
 function createCloth() {
     
     let domDiv = document.createElement("div");
+    let domImg = document.createElement("img");
+    let domDivDiv = document.createElement("div");
     let domPname = document.createElement("p");
     let domPsize = document.createElement("p");
     let domPdesc = document.createElement("p");
@@ -77,6 +89,8 @@ function createCloth() {
     let domBDiv = document.createElement("div");
 
     domDiv.className = "cloth-box";
+    domImg.className = "cloth-image";
+    domDivDiv.className = "cloth-info";
     domPname.className = "cloth-name";
     domPsize.className = "cloth-size";
     domPdesc.className = "cloth-desc";
@@ -92,14 +106,25 @@ function createCloth() {
 
     fontAwesomeIcon("fa-solid fa-cart-shopping", domBbuy);
 
-    domDiv.appendChild(domPname);
-    domDiv.appendChild(domPsize);
+    domDiv.appendChild(domImg);
+    domDiv.appendChild(domDivDiv);
+    domDivDiv.appendChild(domPname);
+    domDivDiv.appendChild(domPsize);
     if(getFormClothDesc() != "") {
-        domDiv.appendChild(domPdesc);
+        domDivDiv.appendChild(domPdesc);
     }
-    domDiv.appendChild(domPprice);
-    domDiv.appendChild(domBDiv);
+    domDivDiv.appendChild(domPprice);
+    domDivDiv.appendChild(domBDiv);
     domBDiv.appendChild(domBbuy);
+
+    let file = getFormImage();
+    if(file != "") {
+        const reader = new FileReader();
+            reader.onload = function(e) {
+                domImg.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+    }       
 
     document.getElementById("cloth-display").appendChild(domDiv);
 }
