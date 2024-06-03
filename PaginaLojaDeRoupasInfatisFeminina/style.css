@@ -22,9 +22,11 @@ body {
 h1 {
     font-family: "baby";
     font-weight: normal;
-    font-size: 500%;
+    font-size: 600%;
     color: #b44557;
     text-align: center;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
 }
 
 .new-cloth-display {
@@ -34,7 +36,7 @@ h1 {
     border: solid, 2px ,#b44557;
     border-radius: 7px;
     padding: 10px;
-    
+    margin-bottom: 2%;    
 }
 
 .cloth-display {
