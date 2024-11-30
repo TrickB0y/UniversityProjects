@@ -1,6 +1,6 @@
 # UniversityProjects <h1>
 
-My University Projects <h2>
+My University Web Pages Projects <h2>
 
 * [Site do Evento Tech](https://trickb0y.github.io/UniversityProjects/PaginaDeEventoDeTecnologia/)
 * [Site da Banda Linkin Park](https://trickb0y.github.io/UniversityProjects/PaginaDeBanda/)
