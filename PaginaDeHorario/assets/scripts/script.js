@@ -2,7 +2,7 @@ var date = new Date;
 
 var secondDeg = date.getSeconds() * 6;
 var minuteDeg = date.getMinutes() * 6;
-var hourDeg = date.(getHours() - 12) * 30;
+var hourDeg = (date.getHours() - 12) * 30;
 
 var lastSecond = date.getSeconds();
 var lastMinute = date.getMinutes();
